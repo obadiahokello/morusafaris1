@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}{{htels.title}}{% endblock %}
+{% block content %}
+  <body>
+
+      <!-- Base typography-->
+      <section class="section section-sm section-first bg-default text-left">
+        <div class="container">
+          <div class="row row-40 flex-lg-row-reverse justify-content-xl-between">
+            <div class="col-xl-5 d-none d-xl-block">
+              <div class="offset-left-xl-45">
+                <p>{{ blog.content4 }}</p>
+                  <p>{{ blog.content5 }}</p>
+                <p>{{ blog.content6 }}</p>
+              </div>
+            </div>
+            <div class="col-xl-7">
+              <ul class="list-xl box-typography">
+              
+                <li>
+                  <h2>{{ blog.heading }}</h2>
+                  <img style="max-inline-size: 40%;" src="{{blog.image.url}}">
+                  <p>{{ blog.content }}</p>
+                  <p></p>
+                  <p>{{ blog.content2 }}</p>
+                  <p>{{ blog.content3 }}</p>
+                  
+                </li>
+               
+                
+              </ul>
+             
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- HTML Text Elements-->
+
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+  {% endblock %}
